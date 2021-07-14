@@ -6,4 +6,4 @@ All sequence alignments were performed using command-line BLAST. An example of t
 blastn -query locus_sequence.fasta -subject References.fasta -task blastn-short -ungapped -num_threads 32 -outfmt 6 -out locus_sequence.blastn
 ```
 
-The Python file `acquisition.py` counts of the number of new spacers acquired, while the file `spacer_align.py` helps find the origin of each new spacer.
+The Python file `acquisition.py` counts of the number of new spacers acquired and then extract them and send them to a FASTA file containing all new spacers. The file `spacer_align.py` helps find the origin of each newly acquired spacer. 
